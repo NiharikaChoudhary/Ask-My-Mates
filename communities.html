@@ -1,0 +1,93 @@
+<!-- communities.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="communities.css">
+    <script src="https://kit.fontawesome.com/5d44f58943.js" crossorigin="anonymous"></script>
+    <title>Questions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="Questions">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="main.html" >HOME</a></li>
+                    <li><a href="Question.html">QUESTIONS</a></li>
+                    <li><a href="communities.html">COMMUNITIES</a></li>
+                    <li><a href="contact us.html">CONTACT US</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>  
+                   
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <div class="ask">
+            <ul class="ul-ask">
+            <input type="search" class="input-box" placeholder="Search for a community">
+            <a href=""class="hero-btn">Search</a>
+        </ul> 
+        </div>
+        <h1 class="ques-heading">Communities</h1>
+        <section class="ques-container">
+            <div >
+                <h1 class="ques-page">Community Name </h1>
+                <div class="ques-body">
+                    <p class="answer-text">A little about community</p>         
+            <button type="button" class="ans-img-btn">JOIN</i></button>
+                </div>
+            </div>
+            <div >
+                <h1 class="ques-page">Community Name </h1>
+                <div class="ques-body">
+                    <p class="answer-text">A little about community</p>    
+                        <button type="button" class="ans-img-btn">JOIN</i></button>
+                </div>
+            </div>
+            <div >  
+                <h1 class="ques-page">Community Name  </h1>
+                <div class="ques-body">
+                    <p class="answer-text">A little about community</p>      
+                        <button type="button" class="ans-img-btn">JOIN</i></button>
+                </div>
+            </div>
+
+        </section>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            } 
+            function hideMenu(){
+                navLinks.style.right="-200";
+            }  
+            </script>
+
+        <script>
+            var ques = document.getElementsByClassName("ques-page");
+            var i;
+            for (i = 0; i < ques.length; i++) {
+                ques[i].addEventListener("click", function () {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
+                    /* Toggle between hiding and showing the active panel */
+                    var body = this.nextElementSibling;
+                    if (body.style.display === "block") {
+                        body.style.display = "none";
+                    } else {
+                        body.style.display = "block";
+                    }
+                });
+            }
+        </script>
+</body>
+</html>

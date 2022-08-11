@@ -1,0 +1,73 @@
+<!-- Login Html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <!-- icon kit code -->
+    <script src="https://kit.fontawesome.com/5d44f58943.js" crossorigin="anonymous"></script>
+    <title>Ask My Mates Login Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    
+    <section class ="ACCOUNT" id="account">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                
+                <ul>
+                    
+                      <li><a href="main.html" >HOME</a></li>
+                      <li><a href="Question.html">QUESTIONS</a></li>
+                      <li><a href="communities.html">COMMUNITIES</a></li>
+                      <li><a href="contact us.html">CONTACT US</a></li>
+                      <li><a href="aboutus.html">ABOUT US</a></li>
+                    
+                </ul>
+    
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="Log-In-form">
+            <form>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <h1>Log In Now</h1> 
+                <input type="email" class="input-box" id="email" placeholder="Your Email">
+                <input type="password" class="input-box" id="password" placeholder="Your password">
+                <p> <span><input type="checkbox"></span> I agree to the terms of services</p>
+            <button type="button" class="login-btn" id="btn">Log In</button>
+            <hr>
+            <p class="or">OR</p>
+            <div class="login-icons">
+          <ul > 
+                <li><button type="button" class="log-icon"><i class="fa fa-twitter"></i></button></li>
+               <li><button type="button" class="log-icon"><i class="fa fa-facebook" ></i></button></li>
+               <li><button type="button" class="log-icon"><i class="fa fa-instagram"></i></button></li>
+               <li><button type="button" class="log-icon"><i class="fa fa-linkedin"></i></button></li>
+            </ul>
+        </div>  
+            <p> Don`t have an account? <a href="signup.html">Sign Up</a></p>
+            </form>
+        </div>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            } 
+            function hideMenu(){
+                navLinks.style.right="-200";
+            }  
+            </script>
+
+        </section>
+</body>
+
+</html>

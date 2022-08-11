@@ -1,0 +1,52 @@
+<!-- contactus.html  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact us.css">
+    <title>Ask My Mates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-links" id="navLinks">
+            
+            <i class="fa fa-times" onclick="hideMenu()" ></i>
+            
+            <ul>
+                
+                <li><a href="main.html" >HOME</a></li>
+                <li><a href="Question.html">QUESTIONS</a></li>
+                <li><a href="communities.html">COMMUNITIES</a></li>
+                <li><a href="contact us.html">CONTACT US</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                
+                
+            </ul>
+
+        </div>
+        <i class="fa fa-bars"onclick="showMenu()"></i>
+    </nav>
+    <section class ="cta">
+        
+        <h1>Join for our various communities.<br> Anywhere from the world!
+        </h1>
+        <a href="contact.html"class="hero-btn">CONTACT US</a>
+
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        } 
+        function hideMenu(){
+            navLinks.style.right="-200";
+        }  
+        </script>
+</body>
+</html>
